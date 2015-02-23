@@ -1,6 +1,6 @@
 {
-  "name": "hapi-prototype",
-  "description": "Hapi Prototype Application",
+    "name": "Spinaldash.net",
+  "description": "MJ's Home Website",
   "homepage": "https://github.com/coding-house-jan2015/hapi-prototype",
   "engines": {
     "node": "0.12.x"
@@ -15,15 +15,15 @@
     "mongo",
     "mongoose"
   ],
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "author": "Michael J. Perez <mjosephvp@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coding-house-jan2015/hapi-prototype.git"
+    "url": "https://github.com/Spinaldash/Spinaldash.net"
   },
   "version": "1.0.0",
   "scripts": {
     "start": "node server/index.js",
-    "localstart": "MONGO_URL=mongodb://localhost/hapi-prototype PORT=3333 nodemon -e js,jade server/index.js",
+    "localstart": "MONGO_URL=mongodb://localhost/spinaldash.net PORT=3000 nodemon -e js,jade server/index.js",
     "clean": "rm -rf node_modules && rm -rf public && npm install && bower install && gulp build",
     "postinstall": "bower install && gulp build"
   },
